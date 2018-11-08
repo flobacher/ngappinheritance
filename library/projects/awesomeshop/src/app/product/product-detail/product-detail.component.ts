@@ -1,12 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ProductDetailComponent as BaseProductDetailComponent } from '@lib/product/product-detail/product-detail.component';
 
 @Component({
   selector: 'as-product-detail',
-  templateUrl: './product-detail.component.html',
+  templateUrl: '../../../../../awesomelibrary/src/lib/product/product-detail/product-detail.component.html',
   styleUrls: [],
 })
-export class ProductDetailComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class ProductDetailComponent extends BaseProductDetailComponent {}

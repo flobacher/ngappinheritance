@@ -3,7 +3,7 @@ import { HeroComponent as BaseHeroComponent } from '@lib/hero/hero.component';
 
 @Component({
   selector: 'as-hero',
-  templateUrl: './hero.component.html',
+  templateUrl: '../../../../awesomelibrary/src/lib/hero/hero.component.html',
   styleUrls: [],
 })
 export class HeroComponent extends BaseHeroComponent {}

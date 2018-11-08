@@ -22,7 +22,7 @@
             "main": "projects/awesomeshop/src/main.ts",
             "polyfills": "projects/awesomeshop/src/polyfills.ts",
             "tsConfig": "projects/awesomeshop/tsconfig.app.json",
-            "assets": ["projects/awesomeshop/src/favicon.ico", "projects/awesomeshop/src/assets"],
+            "assets": ["projects/awesomeshop/src/favicon.ico", "projects/awesomeshop/src/assets", "projects/awesomeshop/src/server.js"],
             "styles": ["projects/awesomeshop/src/styles.less"],
             "scripts": []
           },
@@ -110,7 +110,11 @@
             "main": "projects/awesomeshoppro/src/main.ts",
             "polyfills": "projects/awesomeshoppro/src/polyfills.ts",
             "tsConfig": "projects/awesomeshoppro/tsconfig.app.json",
-            "assets": ["projects/awesomeshoppro/src/favicon.ico", "projects/awesomeshoppro/src/assets"],
+            "assets": [
+              "projects/awesomeshoppro/src/favicon.ico",
+              "projects/awesomeshoppro/src/assets",
+              "projects/awesomeshop/src/server.js"
+            ],
             "styles": ["projects/awesomeshoppro/src/styles.less"],
             "scripts": []
           },

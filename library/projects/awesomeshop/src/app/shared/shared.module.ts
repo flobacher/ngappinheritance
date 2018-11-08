@@ -3,12 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { InfobubbleComponent } from './infobubble/infobubble.component';
 
-export const declarations = [InfobubbleComponent];
-export const exports = [InfobubbleComponent];
-
 @NgModule({
   imports: [CommonModule],
-  declarations: declarations,
-  exports: exports,
+  declarations: [InfobubbleComponent],
+  exports: [InfobubbleComponent],
 })
 export class SharedModule {}

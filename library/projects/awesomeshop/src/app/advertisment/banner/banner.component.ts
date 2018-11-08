@@ -3,7 +3,7 @@ import { BannerComponent as BaseBannerComponent } from '@lib/advertisment/banner
 
 @Component({
   selector: 'as-banner',
-  templateUrl: '@lib/advertisment/banner/banner.component.html',
+  templateUrl: '../../../../../awesomelibrary/src/lib/advertisment/banner/banner.component.html',
   styleUrls: [],
 })
 export class BannerComponent extends BaseBannerComponent {}

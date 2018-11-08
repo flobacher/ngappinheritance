@@ -11,12 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 
-export const declarations = [RootComponent, HeroComponent, HeaderComponent, HomeComponent, NavComponent];
-export const imports = [BrowserModule, SharedModule, AdvertismentModule, ProductModule, AppRoutingModule];
-
 @NgModule({
-  declarations: declarations,
-  imports: imports,
+  declarations: [RootComponent, HeroComponent, HeaderComponent, HomeComponent, NavComponent],
+  imports: [BrowserModule, SharedModule, AdvertismentModule, ProductModule, AppRoutingModule],
   providers: [],
   bootstrap: [RootComponent],
 })

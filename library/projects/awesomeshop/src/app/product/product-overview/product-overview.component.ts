@@ -1,12 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ProductOverviewComponent as BaseProductOverviewComponent } from '@lib/product/product-overview/product-overview.component';
 
 @Component({
   selector: 'as-product-overview',
-  templateUrl: './product-overview.component.html',
-  styleUrls: [],
+  templateUrl: '../../../../../awesomelibrary/src/lib/product/product-overview/product-overview.component.html',
 })
-export class ProductOverviewComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class ProductOverviewComponent extends BaseProductOverviewComponent {}
