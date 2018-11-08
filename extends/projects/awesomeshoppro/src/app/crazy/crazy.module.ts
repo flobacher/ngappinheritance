@@ -7,5 +7,6 @@ import { CrazyViewComponent } from './crazy-view/crazy-view.component';
 @NgModule({
   declarations: [CrazyViewComponent],
   imports: [CrazyRoutingModule, SharedModule],
+  entryComponents: [CrazyViewComponent]
 })
 export class CrazyModule {}

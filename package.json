@@ -1,0 +1,27 @@
+{
+  "name": "ngappinheritance",
+  "version": "1.0.0",
+  "description": "Experiment with different inheritance strategies",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "cd extends && npm i && cd ../library && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flobacher/ngappinheritance.git"
+  },
+  "author": "Flo Bacher <flo@digital-fuse.net>",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/flobacher/ngappinheritance/issues"
+  },
+  "homepage": "https://github.com/flobacher/ngappinheritance#readme",
+  "dependencies": {
+    "@polka/send": "^0.4.0",
+    "polka": "^0.5.1",
+    "sirv": "^0.2.2"
+  }
+}

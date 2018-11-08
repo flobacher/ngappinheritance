@@ -4,5 +4,6 @@
     "outDir": "../../out-tsc/awesomeshoppro",
     "types": []
   },
+  "include": ["./src", "../awesomeshop/src/app/lazy"],
   "exclude": ["test.ts", "**/*.spec.ts"]
 }

@@ -3,13 +3,12 @@ import { InfobubbleComponent as BaseInfobubbleComponent } from 'projects/awesome
 
 @Component({
   selector: 'as-infobubble',
-  templateUrl: './infobubble.component.html',
-  styleUrls: ['../../../../../awesomeshop/src/app/shared/infobubble/infobubble.component.less'],
+  templateUrl: './infobubble.component.html'
 })
 export class InfobubbleComponent extends BaseInfobubbleComponent implements OnInit {
-  public headLine = 'INFO';
+  public headLine = 'INFO PRO';
 
-  public content = 'CONTENT';
+  public content = 'CONTENT PRO';
 
   constructor() {
     super();

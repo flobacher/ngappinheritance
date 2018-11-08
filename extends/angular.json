@@ -22,7 +22,7 @@
             "main": "projects/awesomeshop/src/main.ts",
             "polyfills": "projects/awesomeshop/src/polyfills.ts",
             "tsConfig": "projects/awesomeshop/tsconfig.app.json",
-            "assets": ["projects/awesomeshop/src/favicon.ico", "projects/awesomeshop/src/assets"],
+            "assets": ["projects/awesomeshop/src/favicon.ico", "projects/awesomeshop/src/assets", "projects/awesomeshop/src/server.js"],
             "styles": ["projects/awesomeshop/src/styles.less"],
             "scripts": []
           },
@@ -70,18 +70,6 @@
             "browserTarget": "awesomeshop:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/awesomeshop/src/test.ts",
-            "polyfills": "projects/awesomeshop/src/polyfills.ts",
-            "tsConfig": "projects/awesomeshop/tsconfig.spec.json",
-            "karmaConfig": "projects/awesomeshop/karma.conf.js",
-            "styles": ["projects/awesomeshop/src/styles.less"],
-            "scripts": [],
-            "assets": ["projects/awesomeshop/src/favicon.ico", "projects/awesomeshop/src/assets"]
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -110,9 +98,14 @@
             "main": "projects/awesomeshoppro/src/main.ts",
             "polyfills": "projects/awesomeshoppro/src/polyfills.ts",
             "tsConfig": "projects/awesomeshoppro/tsconfig.app.json",
-            "assets": ["projects/awesomeshoppro/src/favicon.ico", "projects/awesomeshoppro/src/assets"],
+            "assets": [
+              "projects/awesomeshoppro/src/favicon.ico",
+              "projects/awesomeshoppro/src/assets",
+              "projects/awesomeshoppro/src/server.js"
+            ],
             "styles": ["projects/awesomeshoppro/src/styles.less"],
-            "scripts": []
+            "scripts": [],
+            "lazyModules": ["projects/awesomeshoppro/src/app/crazy/crazy.module", "projects/awesomeshop/src/app/lazy/lazy.module"]
           },
           "configurations": {
             "production": {
@@ -122,15 +115,15 @@
                   "with": "projects/awesomeshoppro/src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": false,
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
+              "aot": false,
               "extractLicenses": true,
               "vendorChunk": true,
-              "buildOptimizer": true,
+              "buildOptimizer": false,
               "budgets": [
                 {
                   "type": "initial",
@@ -156,18 +149,6 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "awesomeshoppro:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/awesomeshoppro/src/test.ts",
-            "polyfills": "projects/awesomeshoppro/src/polyfills.ts",
-            "tsConfig": "projects/awesomeshoppro/tsconfig.spec.json",
-            "karmaConfig": "projects/awesomeshoppro/karma.conf.js",
-            "styles": ["projects/awesomeshoppro/src/styles.less"],
-            "scripts": [],
-            "assets": ["projects/awesomeshoppro/src/favicon.ico", "projects/awesomeshoppro/src/assets"]
           }
         },
         "lint": {

@@ -5,7 +5,7 @@ import { ProductOverviewComponent } from './product-overview/product-overview.co
 
 const routes: Routes = [
   {
-    path: 'products',
+    path: 'product',
     component: ProductOverviewComponent,
     pathMatch: 'full',
   },
