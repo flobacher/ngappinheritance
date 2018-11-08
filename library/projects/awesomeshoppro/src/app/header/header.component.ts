@@ -1,18 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { HeaderComponent as BaseHeaderComponent } from 'projects/awesomeshop/src/app/header/header.component';
+import { HeaderComponent as BaseHeaderComponent } from '@lib/header/header.component';
 
 // override/extend functionality but keep template and styles
 @Component({
   selector: 'as-header',
-  templateUrl: '../../../../awesomeshop/src/app/header/header.component.html',
-  styleUrls: ['../../../../awesomeshop/src/app/header/header.component.less'],
+  templateUrl: '../../.././../awesomelibrary/src/lib/header/header.component.html',
+  styleUrls: ['../../.././../awesomelibrary/src/lib/header/header.component.less'],
 })
-export class HeaderComponent extends BaseHeaderComponent implements OnInit {
+export class HeaderComponent extends BaseHeaderComponent {
   public subtitle = 'ManagementView';
-  constructor() {
-    super();
-  }
-
-  ngOnInit() {}
 }

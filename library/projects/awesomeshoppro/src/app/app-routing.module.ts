@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-import { routes, AppRoutingModule as BaseAppRoutingModule } from 'projects/awesomeshop/src/app/app-routing.module';
+import { HomeComponent } from './home/home.component';
 
-// add an additional route.. every other manipulation of the routes is possible ofc
-routes.push({ path: 'crazy', loadChildren: './crazy/crazy.module#CrazyModule' });
+export const routes: Routes = [
+  { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule' },
+  {
+    path: '',
+    component: HomeComponent,
+    pathMatch: 'full',
+  },
+  { path: 'crazy', loadChildren: './crazy/crazy.module#CrazyModule' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule extends BaseAppRoutingModule {}
+export class AppRoutingModule {}

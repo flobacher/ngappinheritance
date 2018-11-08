@@ -1,38 +1,11 @@
-/// #if JIT
-// import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-
-// import { declarations as baseDeclarations } from 'projects/awesomeshop/src/app/shared/shared.module';
-// import { InfobubbleComponent } from './infobubble/infobubble.component';
-// import { merge } from '../../utils';
-
-// // add additional shared components here
-// const overrides = [InfobubbleComponent];
-// const declarations = merge(baseDeclarations, overrides);
-// const exports = declarations;
-
-// @NgModule({
-//   imports: [CommonModule],
-//   declarations: declarations as any[],
-//   exports: exports as any[],
-// })
-// export class SharedModule {}
-/// #endif
-
-/// #if AOT
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InfobubbleComponent } from './infobubble/infobubble.component';
-import { SharedModule as BaseSharedModule } from 'projects/awesomeshop/src/app/shared/shared.module';
-
-export const declarations = [InfobubbleComponent];
-export const exports = declarations;
 
 @NgModule({
   imports: [CommonModule],
-  declarations: declarations as any[],
-  exports: exports as any[],
+  declarations: [InfobubbleComponent],
+  exports: [InfobubbleComponent],
 })
 export class SharedModule {}
-/// #endif

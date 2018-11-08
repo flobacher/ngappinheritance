@@ -2,7 +2,11 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/awesomeshoppro",
-    "types": []
+    "types": [],
+    "baseUrl": "./",
+    "paths": {
+      "@lib/*": ["../awesomelibrary/src/lib/*"]
+    }
   },
   "exclude": ["test.ts", "**/*.spec.ts"]
 }

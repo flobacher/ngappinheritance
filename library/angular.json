@@ -113,7 +113,7 @@
             "assets": [
               "projects/awesomeshoppro/src/favicon.ico",
               "projects/awesomeshoppro/src/assets",
-              "projects/awesomeshop/src/server.js"
+              "projects/awesomeshoppro/src/server.js"
             ],
             "styles": ["projects/awesomeshoppro/src/styles.less"],
             "scripts": []

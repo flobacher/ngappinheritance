@@ -1,19 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { InfobubbleComponent as BaseInfobubbleComponent } from 'projects/awesomeshop/src/app/shared/infobubble/infobubble.component';
+import { Component } from '@angular/core';
+import { InfobubbleComponent as BaseInfobubbleComponent } from '@lib/shared/infobubble/infobubble.component';
 
 @Component({
   selector: 'as-infobubble',
   templateUrl: './infobubble.component.html',
-  styleUrls: ['../../../../../awesomeshop/src/app/shared/infobubble/infobubble.component.less'],
+  styleUrls: [],
 })
-export class InfobubbleComponent extends BaseInfobubbleComponent implements OnInit {
+export class InfobubbleComponent extends BaseInfobubbleComponent {
   public headLine = 'INFO';
 
   public content = 'CONTENT';
-
-  constructor() {
-    super();
-  }
-
-  ngOnInit() {}
 }

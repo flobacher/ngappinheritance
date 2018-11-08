@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { RootComponent as BaseRootComponent } from 'projects/awesomeshop/src/app/root/root.component';
+import { RootComponent as BaseRootComponent } from '@lib/root/root.component';
 
 @Component({
   selector: 'as-root',
