@@ -14,7 +14,7 @@
     "start_prod:shop": "cross-env PORT=4201 node dist/awesomeshop/server.js",
     "start_prod:shoppro": "cross-env PORT=4301 node dist/awesomeshoppro/server.js",
     "lint": "ng lint",
-    "format": "prettier --write \"./projects/**/*.{ts|less|html}\"",
+    "format": "prettier --write \"projects/**/*.ts\" \"projects/**/*.less\" \"projects/**/*.html\"",
     "fix:scripts:shop": "npm run lint -- awesomeshop --fix",
     "fix:scripts:shoppro": "npm run lint -- awesomeshoppro --fix",
     "fix:styles": "stylelint --fix \"projects/**/*.less\"",
