@@ -1,0 +1,165 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "awesomeshop": {
+      "root": "projects/awesomeshop/",
+      "sourceRoot": "projects/awesomeshop/src",
+      "projectType": "application",
+      "prefix": "as",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "less"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/awesomeshop",
+            "index": "projects/awesomeshop/src/index.html",
+            "main": "projects/awesomeshop/src/main.ts",
+            "polyfills": "projects/awesomeshop/src/polyfills.ts",
+            "tsConfig": "projects/awesomeshop/tsconfig.app.json",
+            "assets": ["projects/awesomeshop/src/favicon.ico", "projects/awesomeshop/src/assets", "projects/awesomeshop/src/server.js"],
+            "styles": ["projects/awesomeshop/src/styles.less"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/awesomeshop/src/environments/environment.ts",
+                  "with": "projects/awesomeshop/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "awesomeshop:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "awesomeshop:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "awesomeshop:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["projects/awesomeshop/tsconfig.app.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "awesomeshoppro": {
+      "root": "projects/awesomeshoppro/",
+      "sourceRoot": "projects/awesomeshoppro/src",
+      "projectType": "application",
+      "prefix": "as",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "less"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/awesomeshoppro",
+            "index": "projects/awesomeshoppro/src/index.html",
+            "main": "projects/awesomeshoppro/src/main.ts",
+            "polyfills": "projects/awesomeshoppro/src/polyfills.ts",
+            "tsConfig": "projects/awesomeshoppro/tsconfig.app.json",
+            "assets": [
+              "projects/awesomeshoppro/src/favicon.ico",
+              "projects/awesomeshoppro/src/assets",
+              "projects/awesomeshoppro/src/server.js"
+            ],
+            "styles": ["projects/awesomeshoppro/src/styles.less"],
+            "scripts": [],
+            "lazyModules": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/awesomeshoppro/src/environments/environment.ts",
+                  "with": "projects/awesomeshoppro/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "awesomeshoppro:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "awesomeshoppro:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "awesomeshoppro:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["projects/awesomeshoppro/tsconfig.app.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "awesomeshop"
+}

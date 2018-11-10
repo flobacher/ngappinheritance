@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/awesomeshoppro",
+    "types": []
+  },
+  "exclude": ["test.ts", "**/*.spec.ts"]
+}
